@@ -1,0 +1,21 @@
+<style>
+    /* Test-specific fixture styles go here. */
+</style>
+
+{@c-spec for="Input with Inline Button" repository=repo}
+    {@c-spec__test describe=".c-input-inline-btn"}
+
+        {@c-spec__case expect="It should create a form input element with an inline button."}
+
+            {@c-input-inline-btn ctx=input /}
+
+        {/c-spec__case}
+
+        {@c-spec__case expect="It can accept placeholder text and various input types."}
+
+            {@c-input-inline-btn type="search" buttonText="Search" placeholder="Enter your search term" /}
+
+        {/c-spec__case}
+
+    {/c-spec__test}
+{/c-spec}

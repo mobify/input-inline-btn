@@ -1,0 +1,43 @@
+// Input Field with Inline Button
+// ===
+//
+// Text field input with inline button. Frequently used for Search or E-mail signups.
+
+
+// Configurable Variables
+// ---
+
+$input-inline-btn__border: $border !default;
+
+// Dependencies
+// ---
+
+@import 'stencil-variables/src/style';
+@import 'level/level';
+
+// Input Field with Inline Button Root
+// ---
+
+.c-input-inline-btn {
+    display: flex;
+
+    button {
+        height: $tap-size; // Match height set to inputs globally
+    }
+
+    [type='search'],
+    [type='email'],
+    [type='text'],
+    [type='number'],
+     {
+        flex: 1;
+        background-color: $input-background-color;
+
+        border: {
+            top: $input-inline-btn__border;
+            right: none;
+            bottom: $input-inline-btn__border;
+            left: $input-inline-btn__border;
+        }
+    }
+}

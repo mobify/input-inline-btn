@@ -1,0 +1,4 @@
+<div class="c-input-inline-btn">
+    <input type="{type}" placeholder="{placeholder}">
+    <button type="submit">{buttonText}</button>
+</div>
