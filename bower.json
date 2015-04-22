@@ -25,7 +25,8 @@
     ".gitignore",
     "package.json",
     "Gruntfile.js",
-    "tests"
+    "tests",
+    "input-inline-btn.template.js"
   ],
   "dependencies": {
     "level": "mobify/level#~0.0.1",
