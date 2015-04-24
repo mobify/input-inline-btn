@@ -20,17 +20,22 @@ $input-inline-btn__border: $border !default;
 
 .c-input-inline-btn {
     display: flex;
+    width: 100%;
 
     button {
         height: $tap-size; // Match height set to inputs globally
+        width: initial;
+
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
     }
 
     [type='search'],
     [type='email'],
     [type='text'],
-    [type='number'],
-     {
+    [type='number'] {
         flex: 1;
+        height: $tap-size;
         background-color: $input-background-color;
 
         border: {
@@ -39,5 +44,7 @@ $input-inline-btn__border: $border !default;
             bottom: $input-inline-btn__border;
             left: $input-inline-btn__border;
         }
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
     }
 }
