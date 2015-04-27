@@ -25,9 +25,6 @@ $input-inline-btn__border: $border !default;
     button {
         height: $tap-size; // Match height set to inputs globally
         width: initial;
-
-        border-top-left-radius: 0;
-        border-bottom-left-radius: 0;
     }
 
     [type='search'],
@@ -44,7 +41,5 @@ $input-inline-btn__border: $border !default;
             bottom: $input-inline-btn__border;
             left: $input-inline-btn__border;
         }
-        border-top-right-radius: 0;
-        border-bottom-right-radius: 0;
     }
 }
